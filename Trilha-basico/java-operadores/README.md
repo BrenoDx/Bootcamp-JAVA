@@ -1,18 +1,20 @@
-## Getting Started
+# 🔢 Operadores em Java
+Este repositório contém um código educacional que demonstra o uso de diversos operadores em Java, incluindo operadores aritméticos, relacionais, lógicos, de atribuição, ternários, unários e incremento/decremento.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## 📌 Descrição
+No código, abordamos:
+✅ Operadores Aritméticos (+, -, *, /, %)
 
-## Folder Structure
+✅ Operadores Relacionais (==, !=, >, <, >=, <=)
 
-The workspace contains two folders by default, where:
+✅ Operadores Lógicos (&&, ||, !)
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+✅ Operadores de Atribuição (=, +=, -=, *=, /=, %=)
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+✅ Operadores Unários (+, -, ++, --)
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+✅ Operador Ternário (? :)
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## 📚 Tecnologias/Ferramentas utilizadas
+* Java
+* VSCode

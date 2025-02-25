@@ -14,6 +14,22 @@ public class Operadores {
         numero--;
         System.out.println("Decremento " + numero);
 
+        //Ternário
+        int a = 5;
+        int b = 6;
+        String resultado = a==b ? "Verdadeiro": "falso";
+
+        System.out.println("Resultado é de: " + resultado);
+
+        //Aritméticos
+        int n1 = 5;
+        int n2 = 2;
+        int soma;
+
+        soma = n1 + n2;
+        soma = n1 / n2;
+        soma = n1 * n2;
+        soma = n1 - n2;
 
     }
 }
