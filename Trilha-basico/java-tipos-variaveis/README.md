@@ -1,4 +1,6 @@
 🖥️ Exemplos de Tipos Primitivos, String e Constantes em Java
+
+
 Este repositório contém um código educacional que demonstra o uso de tipos primitivos, strings e constantes em Java.
 
 📌 Descrição
