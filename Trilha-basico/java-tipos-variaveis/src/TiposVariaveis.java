@@ -23,5 +23,10 @@ public class TiposVariaveis {
 
         System.out.println("Nome: " + meuNome);
         System.out.println("Gênero: " + genero);
+
+        //Boolean
+        boolean ligado = true;
+        ligado = false;
+        System.out.println("Status: " + ligado);
     }
 }
