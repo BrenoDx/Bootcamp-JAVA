@@ -23,8 +23,8 @@ public class Contador {
     }
 
     public static void contar(int numero1, int numero2) throws ParametrosInvalidosException{
-        if(numero1 > numero2){
-        int contagem = numero1 - numero2;
+        if(numero1 < numero2){
+        int contagem = numero2 - numero1;
         for(int i = 1; i <= contagem; i++){
             System.out.println("Imprimindo o número " + i);
         }
