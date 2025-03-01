@@ -2,7 +2,7 @@
 **Autores**
 * Breno Alves
 
-📌 Descrição
+## 📌 Descrição
 Este repositório contém a implementação do desafio Controle de fluxo, onde o usuário insere dois números e o programa vai obter a quantidade de interações para realizar a impressão.
 
 Abaixo um trecho do código no qual tiver como exemplo da DIO.
