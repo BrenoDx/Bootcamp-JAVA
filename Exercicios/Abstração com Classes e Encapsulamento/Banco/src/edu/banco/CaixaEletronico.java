@@ -13,13 +13,14 @@ import java.util.Scanner;
 public class CaixaEletronico {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in); // Objeto para capturar entrada de dados
         int opcao = 0;
 
         Conta conta = new Conta();
         System.out.println("Saldo inicial");
         conta.depositar(sc.nextDouble());
 
+        //Do-While para executar menu do caixa
         do {
             System.out.println("----------Caixa Eletronico BBP-----------");
             System.out.println("1 - Consultar saldo.");
@@ -28,6 +29,7 @@ public class CaixaEletronico {
             System.out.println("4 - Sacar");
             System.out.println("5 - Pagamentos");
             System.out.println("6 - Status conta");
+            System.out.println("7 - Sair");
 
             System.out.println("Selecione a opção(numero) desejada!");
             opcao = sc.nextInt();
@@ -69,13 +71,13 @@ public class CaixaEletronico {
 
                 case 6:
                     break;
-                case 0:
+                case 7:
                     System.out.println("Encerrando o atendimento via caixa eletronico, obrigado por usar");
                     break;
                 default:
                     System.out.println("Selecione a opção correta!");
                     ;
             }
-        } while (opcao != 0);
+        } while (opcao != 7);
     }
 }
