@@ -70,7 +70,7 @@ public class Veiculo {
             }
 
         }
-       
+
     }
 
     public void desacelerar() {
@@ -89,10 +89,6 @@ public class Veiculo {
         if (ligado && velocidade >= 1 && velocidade <= 40) {
             System.out.println("Virando a direita");
         }
-    }
-
-    public int verificarVelocidade() {
-        return 0;
     }
 
     public int aumentarMarcha() {
@@ -120,6 +116,5 @@ public class Veiculo {
     public void setMarcha(int marcha) {
         this.marcha = marcha;
     }
-    
-    
+
 }
