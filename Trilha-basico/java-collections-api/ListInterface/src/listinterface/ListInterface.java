@@ -15,6 +15,17 @@ public class ListInterface {
      */
     public static void main(String[] args) {
          
+         ListaTarefa listaTarefa = new ListaTarefa();
+         
+         listaTarefa.adicionarTarefa("Tarefa 1");
+         listaTarefa.adicionarTarefa("Tarefa 1");
+         listaTarefa.adicionarTarefa("Tarefa 2");
+         System.out.println(listaTarefa.totalDeTarefas());
+         
+         listaTarefa.removerTarefa("Tarefa 1");
+         System.out.println(listaTarefa.totalDeTarefas());
+         
+         listaTarefa.descricoesTarefas();
     }
     
 }
