@@ -35,4 +35,9 @@ public class OrdenacaoPessoa {
         Collections.sort(listaPorAltura, new ComparatorPorAltura());
         return listaPorAltura;
     }
+
+    public List<Pessoa> getLista() {
+        return lista;
+    }
+    
 }
