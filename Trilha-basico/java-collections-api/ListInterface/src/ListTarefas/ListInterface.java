@@ -28,7 +28,16 @@ public class ListInterface {
         System.out.println(listaTarefa.totalDeTarefas());
 
         listaTarefa.descricoesTarefas();
+        
+        Catalogo catalogo = new Catalogo();
+        catalogo.adicionarLivro("Livro 1", "Autor 1", 2021);
+        catalogo.adicionarLivro("Livro 1", "Autor 2", 2022);
+        catalogo.adicionarLivro("Livro 3", "Autor 3", 2023);
+        catalogo.adicionarLivro("Livro 4", "Autor 4", 2024);
 
+        System.out.println(catalogo.pesquisarPorAutor("Autor 1"));
+        System.out.println(catalogo.pesquisarPorIntervaloAnos(2021, 2023));
+        System.out.println(catalogo.pesquisarPorTitulo("Livro 1"));
     }
 
 }
