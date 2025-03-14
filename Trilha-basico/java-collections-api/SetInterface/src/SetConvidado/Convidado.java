@@ -4,6 +4,8 @@
  */
 package SetConvidado;
 
+import java.util.Objects;
+
 /**
  *
  * @author breno
@@ -25,6 +27,22 @@ public class Convidado {
         return codigoConvite;
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(getCodigoConvite());
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+
+        if(!(obj instanceof Convidado convidado)) return false;
+        return getCodigoConvite() == convidado.getCodigoConvite();
+    }
+
+    
+    
     @Override
     public String toString() {
         return "Convidado{" + "nome=" + nome + ", codigoConvite=" + codigoConvite + '}';
