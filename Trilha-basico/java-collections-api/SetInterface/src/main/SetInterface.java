@@ -6,6 +6,7 @@ package main;
 
 import SetContatos.AgendaContatos;
 import SetConvidado.ConjuntoConvidados;
+import SetProdutos.CadastroProdutos;
 
 /**
  *
@@ -45,6 +46,16 @@ public class SetInterface {
         
         System.out.println("Contato atualizado: " + contatos.atualizarNumeroContato("Maria Silva", 55555));
         contatos.exibirContatos();
+        
+        CadastroProdutos produtos = new CadastroProdutos();
+        produtos.adicionarProduto(1l, "Produto 5", 15d, 5);
+        produtos.adicionarProduto(2l, "Produto 0", 20d, 10);
+        produtos.adicionarProduto(1l, "Produto 3", 10d, 2);
+        produtos.adicionarProduto(9l, "Produto 9", 2d, 2);
+        
+        System.out.println(produtos.getSetProduto());
+        System.out.println(produtos.exibirProdutosPorNome());
+        System.out.println(produtos.exibirPorPreco());
         
     }
 
