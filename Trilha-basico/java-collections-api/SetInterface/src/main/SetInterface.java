@@ -4,6 +4,7 @@
  */
 package main;
 
+import SetContatos.AgendaContatos;
 import SetConvidado.ConjuntoConvidados;
 
 /**
@@ -29,6 +30,21 @@ public class SetInterface {
         conjuConvidados.removerConvidadoPorCodigoConvite(1234);
         System.out.println("Existem " + conjuConvidados.contarConvidados() + " dentro do Set de Convidados"); 
         conjuConvidados.exibirConvidados();
+        
+        AgendaContatos contatos = new AgendaContatos();
+        contatos.exibirContatos();
+        
+        contatos.adicionarContato("Camila", 123456);
+        contatos.adicionarContato("Camila", 0);
+        contatos.adicionarContato("Camila Cavalcante", 111111);
+        contatos.adicionarContato("Camila DIO", 654321);
+        contatos.adicionarContato("Maria Silva", 111111);
+        
+        contatos.exibirContatos();
+        System.out.println(contatos.pesquisarPorNome("Maria"));
+        
+        System.out.println("Contato atualizado: " + contatos.atualizarNumeroContato("Maria Silva", 55555));
+        contatos.exibirContatos();
         
     }
 
