@@ -29,6 +29,7 @@ public class SetInterface {
         conjuConvidados.removerConvidadoPorCodigoConvite(1234);
         System.out.println("Existem " + conjuConvidados.contarConvidados() + " dentro do Set de Convidados"); 
         conjuConvidados.exibirConvidados();
+        
     }
 
 }
