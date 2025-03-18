@@ -5,8 +5,11 @@
 package MapEventos;
 
 import java.time.LocalDate;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
 
 /**
  *
@@ -24,5 +27,20 @@ public class AgendaEventos {
         mapEvento.put(data, evento);
     }
     
- 
+    public void exibirAgenda(){
+        Map<LocalDate, Evento> eventosTreeMap = new TreeMap<>(mapEvento);
+        System.out.println(eventosTreeMap);
+    }
+    
+    public void obterProximoEvento(){
+        LocalDate dataAtual = LocalDate.now();
+        Map<LocalDate, Evento> eventosTreeMap = new TreeMap<>(mapEvento);
+        for(Map.Entry<LocalDate, Evento> entry : mapEvento.entrySet()){
+            if(entry.getKey().isEqual(dataAtual) || entry.getKey().isAfter(dataAtual)){
+                System.out.println("Proximo evento: " + entry.getValue() + "acontecera na data " + entry.getKey());
+                break;
+            }
+        }
+        
+    }
 }

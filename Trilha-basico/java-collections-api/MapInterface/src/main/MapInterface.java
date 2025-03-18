@@ -6,6 +6,7 @@ package main;
 
 import MapContato.AgendaContatos;
 import MapEstoque.EstoqueProduto;
+import MapEventos.AgendaEventos;
 
 /**
  *
@@ -45,7 +46,8 @@ public class MapInterface {
         System.out.println("Valor total do estoque: R$" + estoque.calcularValorTotalEstoque());
         System.out.println("Produto mais Caro: " + estoque.obterProdutoMaisCaro());
         
-        AgendaEventos 
+        AgendaEventos evento = new AgendaEventos();
+        
     }
     
 }
