@@ -21,7 +21,7 @@ public class ParImpar {
 
         // Try/catch para prevenir um suposto erro de sistema
         try {
-            // do-while para usuario informa até que o segundo numero for maior que o primeiro
+            // do-while para usuario informa até que o segundo numero for maior que o primeiro  
             do {
                 System.out.println("Informe o primeiro numero");
                 numero1 = Integer.parseInt(sc.nextLine());
