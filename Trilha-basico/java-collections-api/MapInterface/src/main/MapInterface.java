@@ -5,6 +5,7 @@
 package main;
 
 import MapContato.AgendaContatos;
+import MapEstoque.EstoqueProduto;
 
 /**
  *
@@ -30,6 +31,19 @@ public class MapInterface {
         agenda.removerContato("Maria Silva");
         agenda.exibirContato();
         System.out.println("O numero é: " + agenda.pesquisarPorNome("Camila Dio"));
+        
+        
+        EstoqueProduto estoque = new EstoqueProduto();
+        estoque.exibirProdutos();
+        
+        estoque.adicionarProduto(1l, "Produto A", 5.0, 10);
+        estoque.adicionarProduto(2l, "Produto B", 10.0, 5);
+        estoque.adicionarProduto(3l, "Produto A", 15.0, 2);
+        
+        estoque.exibirProdutos();
+        
+        System.out.println("Valor total do estoque: R$" + estoque.calcularValorTotalEstoque());
+        System.out.println("Produto mais Caro: " + estoque.obterProdutoMaisCaro());
     }
     
 }
