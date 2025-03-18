@@ -7,6 +7,8 @@ package main;
 import MapContato.AgendaContatos;
 import MapEstoque.EstoqueProduto;
 import MapEventos.AgendaEventos;
+import java.time.LocalDate;
+import java.time.Month;
 
 /**
  *
@@ -47,7 +49,12 @@ public class MapInterface {
         System.out.println("Produto mais Caro: " + estoque.obterProdutoMaisCaro());
         
         AgendaEventos evento = new AgendaEventos();
+        evento.adicionarEvento(LocalDate.of(2022, Month.JULY, 15), "Evento 1", "Atracao 1");
+        evento.adicionarEvento(LocalDate.of(2022, 7, 9), "Evento 2", "Atracao 2");
+        evento.adicionarEvento(LocalDate.of(2025, Month.JULY, 02), "Evento 3", "Atracao 3");
         
+        evento.exibirAgenda();
+        evento.obterProximoEvento();
     }
     
 }
