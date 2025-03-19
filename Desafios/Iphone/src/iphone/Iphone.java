@@ -12,9 +12,10 @@ import java.util.Random;
  */
 public class Iphone implements AparelhoTelefonico, NavegadorInternet, ReprodutorMusical {
 
-    private boolean pausar = false;
+    private boolean pausado = false;
     private boolean desbloqueado = false;
 
+    @Override
     public boolean desbloquear() {
         if (!desbloqueado) {
             System.out.println("Desbloqueando........");
@@ -25,6 +26,7 @@ public class Iphone implements AparelhoTelefonico, NavegadorInternet, Reprodutor
 
     }
 
+    @Override
     public void bloquear() {
         if (desbloqueado) {
             desbloqueado = false;
@@ -32,6 +34,7 @@ public class Iphone implements AparelhoTelefonico, NavegadorInternet, Reprodutor
         }
     }
 
+    @Override
     public int tocando() {
         int atendeu;
         do {
@@ -48,12 +51,13 @@ public class Iphone implements AparelhoTelefonico, NavegadorInternet, Reprodutor
         return atendeu;
     }
 
+    @Override
     public boolean despausar() {
-        if (pausar) {
-            pausar = false;
+        if (pausado) {
+            pausado = false;
             tocar();
         }
-        return pausar;
+        return pausado;
     }
 
     @Override
@@ -103,9 +107,9 @@ public class Iphone implements AparelhoTelefonico, NavegadorInternet, Reprodutor
 
     @Override
     public void pausar() {
-        if (!pausar) {
+        if (!pausado) {
             System.out.println("Musica pausada");
-            pausar = true;
+            pausado = true;
         } else {
             System.out.println("Musica ja esta pausada!");
         }

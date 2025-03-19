@@ -12,4 +12,7 @@ public interface AparelhoTelefonico {
     public void ligar(int numero);
     public void atender();
     public void iniciarCorreioVoz();
+    public int tocando();
+    public void bloquear();
+    public boolean desbloquear();
 }
